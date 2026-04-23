@@ -4,18 +4,17 @@
 #include <vector>
 #include <utility>
 
-template <typename T, typename U>
 struct Graph {
-    std::vector<std::vector<std::pair<U, T>>> neig;
-    U vertexCount;
-    U edgeCount;
+    std::vector<std::vector<std::pair<size_t, double>>> neig;
+    size_t vertexCount;
+    size_t edgeCount;
 
-    Graph(U vertexCount, U edgeCount) : vertexCount(vertexCount), edgeCount(edgeCount) {
-        neig.resize(vertexCount + 1, std::vector<std::pair<U, T>>{});
+    Graph(size_t vertexCount, size_t edgeCount) : vertexCount(vertexCount), edgeCount(edgeCount) {
+        neig.resize(vertexCount + 1, std::vector<std::pair<size_t, double>>{});
     }
 
-    Graph(Edges<T, U>& edges) : vertexCount(edges.vertexCount), edgeCount(edges.edgeCount) {
-        neig.resize(vertexCount + 1, std::vector<std::pair<U, T>>{});
+    Graph(Edges& edges) : vertexCount(edges.vertexCount), edgeCount(edges.edgeCount) {
+        neig.resize(vertexCount + 1, std::vector<std::pair<size_t, double>>{});
         for (const auto& edge : edges.edges) {
             neig[edge.from].emplace_back(edge.to, edge.cost);
             neig[edge.to].emplace_back(edge.from, edge.cost);

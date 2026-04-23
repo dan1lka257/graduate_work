@@ -2,42 +2,28 @@
 
 #include <vector>
 #include <numeric>
+#include <cstddef>
 
-template <typename U>
 struct Dsu {
-    std::vector<U> parent;
-    std::vector<U> rank;
+    std::vector<size_t> parent;
+    std::vector<size_t> size;
 
-    Dsu(U n) {
-        rank.resize(n, 1);
-        parent.resize(n);
+    Dsu(size_t n) : parent(n), size(n, 1) {
         std::iota(parent.begin(), parent.end(), 0);
     }
 
-    U find_parent(U x) {
-        std::vector<U> way;
-        while (parent[x] != x) {
-            way.push_back(x);
-            x = parent[x];
-        }
-        for (auto i : way) {
-            parent[i] = x;
-        }
-        return x;
+    size_t find_parent(size_t x) {
+        if (parent[x] != x) parent[x] = find_parent(parent[x]);
+        return parent[x];
     }
 
-    void unite(U x, U y) {
+    void unite(size_t x, size_t y) {
         x = find_parent(x);
         y = find_parent(y);
-        if (rank[x] == rank[y]) {
-            parent[x] = y;
-            ++rank[y];
-        }
-        else if (rank[x] < rank[y]) {
-            parent[x] = y;
-        }
-        else {
-            parent[y] = x;
-        }
+        if (x == y) return;
+
+        if (size[x] < size[y]) std::swap(x, y);
+        parent[y] = x;
+        size[x] += size[y];
     }
 };

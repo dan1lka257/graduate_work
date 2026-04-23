@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2025.6.8)  8 JUN 2025 16:41
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2025.6.8)  22 APR 2026 14:05
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1252,37 +1252,37 @@ Overfull \hbox (3.25722pt too wide) in paragraph at lines 145--146
 
 
 [6]
-<images/example_kruskal/kruskal_1.png, id=196, 620.3175pt x 519.9425pt>
+<images/example_kruskal/kruskal_1.png, id=211, 620.3175pt x 519.9425pt>
 File: images/example_kruskal/kruskal_1.png Graphic file (type png)
 <use images/example_kruskal/kruskal_1.png>
 Package pdftex.def Info: images/example_kruskal/kruskal_1.png  used on input li
 ne 155.
 (pdftex.def)             Requested size: 153.64644pt x 128.77939pt.
-<images/example_kruskal/kruskal_2.png, id=198, 620.3175pt x 519.9425pt>
+<images/example_kruskal/kruskal_2.png, id=213, 620.3175pt x 519.9425pt>
 File: images/example_kruskal/kruskal_2.png Graphic file (type png)
 <use images/example_kruskal/kruskal_2.png>
 Package pdftex.def Info: images/example_kruskal/kruskal_2.png  used on input li
 ne 157.
 (pdftex.def)             Requested size: 153.64644pt x 128.77939pt.
-<images/example_kruskal/kruskal_3.png, id=199, 620.3175pt x 519.9425pt>
+<images/example_kruskal/kruskal_3.png, id=214, 620.3175pt x 519.9425pt>
 File: images/example_kruskal/kruskal_3.png Graphic file (type png)
 <use images/example_kruskal/kruskal_3.png>
 Package pdftex.def Info: images/example_kruskal/kruskal_3.png  used on input li
 ne 159.
 (pdftex.def)             Requested size: 153.64644pt x 128.77939pt.
-<images/example_kruskal/kruskal_4.png, id=200, 620.3175pt x 519.9425pt>
+<images/example_kruskal/kruskal_4.png, id=215, 620.3175pt x 519.9425pt>
 File: images/example_kruskal/kruskal_4.png Graphic file (type png)
 <use images/example_kruskal/kruskal_4.png>
 Package pdftex.def Info: images/example_kruskal/kruskal_4.png  used on input li
 ne 163.
 (pdftex.def)             Requested size: 153.64644pt x 128.77939pt.
-<images/example_kruskal/kruskal_5.png, id=201, 620.3175pt x 519.9425pt>
+<images/example_kruskal/kruskal_5.png, id=216, 620.3175pt x 519.9425pt>
 File: images/example_kruskal/kruskal_5.png Graphic file (type png)
 <use images/example_kruskal/kruskal_5.png>
 Package pdftex.def Info: images/example_kruskal/kruskal_5.png  used on input li
 ne 165.
 (pdftex.def)             Requested size: 153.64644pt x 128.77939pt.
-<images/example_kruskal/kruskal_6.png, id=202, 620.3175pt x 519.9425pt>
+<images/example_kruskal/kruskal_6.png, id=217, 620.3175pt x 519.9425pt>
 File: images/example_kruskal/kruskal_6.png Graphic file (type png)
 <use images/example_kruskal/kruskal_6.png>
 Package pdftex.def Info: images/example_kruskal/kruskal_6.png  used on input li
@@ -1296,87 +1296,93 @@ l_4.png> <./images/example_kruskal/kruskal_5.png> <./images/example_kruskal/kru
 skal_6.png>]
 
 [8]
-<images/example_prim/prim_1.png, id=219, 620.3175pt x 519.9425pt>
-File: images/example_prim/prim_1.png Graphic file (type png)
-<use images/example_prim/prim_1.png>
-Package pdftex.def Info: images/example_prim/prim_1.png  used on input line 206
-.
-(pdftex.def)             Requested size: 122.91872pt x 103.02667pt.
-<images/example_prim/prim_2.png, id=220, 620.3175pt x 519.9425pt>
-File: images/example_prim/prim_2.png Graphic file (type png)
-<use images/example_prim/prim_2.png>
-Package pdftex.def Info: images/example_prim/prim_2.png  used on input line 208
-.
-(pdftex.def)             Requested size: 122.91872pt x 103.02667pt.
-<images/example_prim/prim_3.png, id=221, 620.3175pt x 519.9425pt>
-File: images/example_prim/prim_3.png Graphic file (type png)
-<use images/example_prim/prim_3.png>
-Package pdftex.def Info: images/example_prim/prim_3.png  used on input line 210
-.
-(pdftex.def)             Requested size: 122.91872pt x 103.02667pt.
-<images/example_prim/prim_4.png, id=222, 620.3175pt x 519.9425pt>
-File: images/example_prim/prim_4.png Graphic file (type png)
-<use images/example_prim/prim_4.png>
-Package pdftex.def Info: images/example_prim/prim_4.png  used on input line 212
-.
-(pdftex.def)             Requested size: 122.91872pt x 103.02667pt.
-<images/example_prim/prim_5.png, id=223, 620.3175pt x 519.9425pt>
-File: images/example_prim/prim_5.png Graphic file (type png)
-<use images/example_prim/prim_5.png>
-Package pdftex.def Info: images/example_prim/prim_5.png  used on input line 216
-.
-(pdftex.def)             Requested size: 122.91872pt x 103.02667pt.
-<images/example_prim/prim_6.png, id=224, 620.3175pt x 519.9425pt>
-File: images/example_prim/prim_6.png Graphic file (type png)
-<use images/example_prim/prim_6.png>
-Package pdftex.def Info: images/example_prim/prim_6.png  used on input line 217
-.
-(pdftex.def)             Requested size: 122.91872pt x 103.02667pt.
-<images/example_prim/prim_7.png, id=225, 620.3175pt x 519.9425pt>
-File: images/example_prim/prim_7.png Graphic file (type png)
-<use images/example_prim/prim_7.png>
-Package pdftex.def Info: images/example_prim/prim_7.png  used on input line 218
-.
-(pdftex.def)             Requested size: 122.91872pt x 103.02667pt.
-
-
-[9 <./images/example_prim/prim_1.png> <./images/example_prim/prim_2.png> <./ima
-ges/example_prim/prim_3.png> <./images/example_prim/prim_4.png> <./images/examp
-le_prim/prim_5.png> <./images/example_prim/prim_6.png> <./images/example_prim/p
-rim_7.png>]
-<images/algorithm_comparasion.png, id=238, 1011.78pt x 433.62pt>
-File: images/algorithm_comparasion.png Graphic file (type png)
-<use images/algorithm_comparasion.png>
-Package pdftex.def Info: images/algorithm_comparasion.png  used on input line 2
-59.
-(pdftex.def)             Requested size: 512.14963pt x 219.49576pt.
-
-
-[10]
-<images/big_o_analysis.png, id=243, 1011.78pt x 433.62pt>
-File: images/big_o_analysis.png Graphic file (type png)
-<use images/big_o_analysis.png>
-Package pdftex.def Info: images/big_o_analysis.png  used on input line 272.
-(pdftex.def)             Requested size: 512.14963pt x 219.49576pt.
-
-
-[11 <./images/algorithm_comparasion.png> <./images/big_o_analysis.png>]
-
-[12] (c:/texlive/2025/texmf-dist/tex/latex/listings/lstlang1.sty
-File: lstlang1.sty 2024/09/23 1.10c listings language file
-)
 LaTeX Font Info:    Trying to load font information for T2A+cmtt on input line 
-317.
-
-(c:/texlive/2025/texmf-dist/tex/latex/cyrillic/t2acmtt.fd
+213.
+ (c:/texlive/2025/texmf-dist/tex/latex/cyrillic/t2acmtt.fd
 File: t2acmtt.fd 2001/08/11 v1.0a Computer Modern Cyrillic font definitions
 )
 
-[13]
+[9]
 
-[14]
+[10]
+<images/example_prim/prim_1.png, id=243, 620.3175pt x 519.9425pt>
+File: images/example_prim/prim_1.png Graphic file (type png)
+<use images/example_prim/prim_1.png>
+Package pdftex.def Info: images/example_prim/prim_1.png  used on input line 258
+.
+(pdftex.def)             Requested size: 122.91872pt x 103.02667pt.
+<images/example_prim/prim_2.png, id=244, 620.3175pt x 519.9425pt>
+File: images/example_prim/prim_2.png Graphic file (type png)
+<use images/example_prim/prim_2.png>
+Package pdftex.def Info: images/example_prim/prim_2.png  used on input line 260
+.
+(pdftex.def)             Requested size: 122.91872pt x 103.02667pt.
+<images/example_prim/prim_3.png, id=245, 620.3175pt x 519.9425pt>
+File: images/example_prim/prim_3.png Graphic file (type png)
+<use images/example_prim/prim_3.png>
+Package pdftex.def Info: images/example_prim/prim_3.png  used on input line 262
+.
+(pdftex.def)             Requested size: 122.91872pt x 103.02667pt.
+<images/example_prim/prim_4.png, id=246, 620.3175pt x 519.9425pt>
+File: images/example_prim/prim_4.png Graphic file (type png)
+<use images/example_prim/prim_4.png>
+Package pdftex.def Info: images/example_prim/prim_4.png  used on input line 264
+.
+(pdftex.def)             Requested size: 122.91872pt x 103.02667pt.
+
+
+[11]
+<images/example_prim/prim_5.png, id=251, 620.3175pt x 519.9425pt>
+File: images/example_prim/prim_5.png Graphic file (type png)
+<use images/example_prim/prim_5.png>
+Package pdftex.def Info: images/example_prim/prim_5.png  used on input line 268
+.
+(pdftex.def)             Requested size: 122.91872pt x 103.02667pt.
+<images/example_prim/prim_6.png, id=252, 620.3175pt x 519.9425pt>
+File: images/example_prim/prim_6.png Graphic file (type png)
+<use images/example_prim/prim_6.png>
+Package pdftex.def Info: images/example_prim/prim_6.png  used on input line 269
+.
+(pdftex.def)             Requested size: 122.91872pt x 103.02667pt.
+<images/example_prim/prim_7.png, id=253, 620.3175pt x 519.9425pt>
+File: images/example_prim/prim_7.png Graphic file (type png)
+<use images/example_prim/prim_7.png>
+Package pdftex.def Info: images/example_prim/prim_7.png  used on input line 270
+.
+(pdftex.def)             Requested size: 122.91872pt x 103.02667pt.
+
+
+[12 <./images/example_prim/prim_1.png> <./images/example_prim/prim_2.png> <./im
+ages/example_prim/prim_3.png> <./images/example_prim/prim_4.png> <./images/exam
+ple_prim/prim_5.png> <./images/example_prim/prim_6.png> <./images/example_prim/
+prim_7.png>]
+<images/algorithm_comparasion.png, id=266, 1011.78pt x 433.62pt>
+File: images/algorithm_comparasion.png Graphic file (type png)
+<use images/algorithm_comparasion.png>
+Package pdftex.def Info: images/algorithm_comparasion.png  used on input line 3
+11.
+(pdftex.def)             Requested size: 512.14963pt x 219.49576pt.
+
+
+[13]
+<images/big_o_analysis.png, id=272, 1011.78pt x 433.62pt>
+File: images/big_o_analysis.png Graphic file (type png)
+<use images/big_o_analysis.png>
+Package pdftex.def Info: images/big_o_analysis.png  used on input line 324.
+(pdftex.def)             Requested size: 512.14963pt x 219.49576pt.
+
+
+[14 <./images/algorithm_comparasion.png> <./images/big_o_analysis.png>]
 
 [15] (c:/texlive/2025/texmf-dist/tex/latex/listings/lstlang1.sty
+File: lstlang1.sty 2024/09/23 1.10c listings language file
+)
+
+[16]
+
+[17]
+
+[18] (c:/texlive/2025/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2024/09/23 1.10c listings language file
 )
 (c:/texlive/2025/texmf-dist/tex/latex/listings/lstlang1.sty
@@ -1386,32 +1392,32 @@ File: lstlang1.sty 2024/09/23 1.10c listings language file
 File: lstmisc.sty 2024/09/23 1.10c (Carsten Heinz)
 )
 
-[16]
-
-[17]
-
-[18]
-
 [19]
 
 [20]
 
-[21] (./document.aux)
+[21]
+
+[22]
+
+[23]
+
+[24] (./document.aux)
  ***********
 LaTeX2e <2025-06-01>
 L3 programming layer <2025-05-26>
  ***********
 Package rerunfilecheck Info: File `document.out' has not changed.
-(rerunfilecheck)             Checksum: 9F4A964D04CD0B8CC3D40F4A7E822142;6475.
+(rerunfilecheck)             Checksum: 991817F985ECEAD4FFB34AC4E16FB4F9;7154.
  ) 
 Here is how much of TeX's memory you used:
- 30820 strings out of 467891
- 541151 string characters out of 5438302
- 1491924 words of memory out of 5000000
- 58432 multiletter control sequences out of 15000+600000
+ 30829 strings out of 467891
+ 541264 string characters out of 5438302
+ 1491928 words of memory out of 5000000
+ 58435 multiletter control sequences out of 15000+600000
  641780 words of font info for 84 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 99i,6n,96p,3277b,2175s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 99i,6n,96p,3277b,2174s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb><c:/tex
 live/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb><c:/texlive/2025/
 texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2025/texmf-dist
@@ -1426,10 +1432,10 @@ st/fonts/type1/public/cm-super/sfrm1200.pfb><c:/texlive/2025/texmf-dist/fonts/t
 ype1/public/cm-super/sfti1200.pfb><c:/texlive/2025/texmf-dist/fonts/type1/publi
 c/cm-super/sftt1000.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/cm-super
 /sftt1200.pfb>
-Output written on document.pdf (21 pages, 741819 bytes).
+Output written on document.pdf (24 pages, 757322 bytes).
 PDF statistics:
- 773 PDF objects out of 1000 (max. 8388607)
- 683 compressed objects within 7 object streams
- 381 named destinations out of 1000 (max. 500000)
- 312 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 802 PDF objects out of 1000 (max. 8388607)
+ 708 compressed objects within 8 object streams
+ 387 named destinations out of 1000 (max. 500000)
+ 336 words of extra memory for PDF output out of 10000 (max. 10000000)
 

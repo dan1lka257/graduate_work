@@ -5,34 +5,118 @@
 #include <chrono>
 #include <functional>
 #include <string>
+#include <iostream>
 
-void run_test(int64_t maxVertexCount,
-    int64_t vertexStep,
-    const std::string& kruskalFilename,
-    const std::string& primFilename,
-    int64_t(*edge_count_func)(int64_t))
+const size_t NUM_MEASURE_ITER = 5;
+
+template <typename Func, typename... Args>
+double measure_time(Func&& func, Args&&... args) {
+    auto start = std::chrono::high_resolution_clock::now();
+    std::forward<Func>(func)(std::forward<Args>(args)...);
+    auto end = std::chrono::high_resolution_clock::now();
+    std::chrono::duration<double> duration = end - start;
+    return duration.count();
+}
+
+void run_kruskal_test(size_t maxVertexCount,
+    size_t vertexStep,
+    const std::string& filename,
+    size_t(*edge_count_func)(size_t))
 {
-    std::ofstream kruskalFile(kruskalFilename);
-    std::ofstream primFile(primFilename);
+    std::ofstream outFile(filename);
+    outFile << "# vertices edges time_seconds\n";
 
-    for (int64_t n = 10; n < maxVertexCount; n += vertexStep) {
-        int64_t m = edge_count_func(n);
-        Edges<double, int64_t> edges(n, m);
-        edges.fill();
+    for (size_t n = 300; n < maxVertexCount; n += vertexStep) {
+        size_t m = edge_count_func(n);
+        Edges edges(n, m);
 
-        // Kruskal
-        auto startKruskal = std::chrono::high_resolution_clock::now();
-        auto kruskal_graph = Kruskal(edges);
-        auto endKruskal = std::chrono::high_resolution_clock::now();
-        std::chrono::duration<double> durationKruskal = endKruskal - startKruskal;
-        kruskalFile << n << " " << durationKruskal.count() << "\n";
-
-        // Prim
-        Graph<double, int64_t> graph(edges);
-        auto startPrim = std::chrono::high_resolution_clock::now();
-        auto prim_graph = Prim(graph);
-        auto endPrim = std::chrono::high_resolution_clock::now();
-        std::chrono::duration<double> durationPrim = endPrim - startPrim;
-        primFile << n << " " << durationPrim.count() << "\n";
+        double time = 0;
+        for (size_t i = 0; i < NUM_MEASURE_ITER; ++i) {
+            edges.fill();
+            time += Kruskal(edges).second;
+        }
+        time = time / NUM_MEASURE_ITER;
+        std::cout << "Kruskal: " << n << " " << m << " " << time << "\n";
+        outFile << n << " " << m << " " << time << "\n";
     }
+
+    outFile.close();
+}
+
+void run_prim_binary_test(size_t maxVertexCount,
+    size_t vertexStep,
+    const std::string& filename,
+    size_t(*edge_count_func)(size_t))
+{
+    std::ofstream outFile(filename);
+    outFile << "# vertices edges time_seconds\n";
+
+    for (size_t n = 300; n < maxVertexCount; n += vertexStep) {
+        size_t m = edge_count_func(n);
+        Edges edges(n, m);
+
+        double time = 0;
+        for (size_t i = 0; i < NUM_MEASURE_ITER; ++i) {
+            edges.fill();
+            Graph graph(edges);
+            time += Prim_binary(graph).second;
+        }
+        time = time / NUM_MEASURE_ITER;
+        std::cout << "Prim_binary: " << n << " " << m << " " << time << "\n";
+        outFile << n << " " << m << " " << time << "\n";
+    }
+
+    outFile.close();
+}
+
+void run_prim_fibonacci_test(size_t maxVertexCount,
+    size_t vertexStep,
+    const std::string& filename,
+    size_t(*edge_count_func)(size_t))
+{
+    std::ofstream outFile(filename);
+    outFile << "# vertices edges time_seconds\n";
+
+    for (size_t n = 300; n < maxVertexCount; n += vertexStep) {
+        size_t m = edge_count_func(n);
+        Edges edges(n, m);
+
+        double time = 0;
+        for (size_t i = 0; i < NUM_MEASURE_ITER; ++i) {
+            edges.fill();
+            Graph graph(edges);
+            time += Prim_fibonacci(graph).second;
+        }
+        time = time / NUM_MEASURE_ITER;
+        std::cout << "Prim_fibonacci: " << n << " " << m << " " << time << "\n";
+        outFile << n << " " << m << " " << time << "\n";
+    }
+
+    outFile.close();
+}
+
+void run_prim_vector_test(size_t maxVertexCount,
+    size_t vertexStep,
+    const std::string& filename,
+    size_t(*edge_count_func)(size_t))
+{
+    std::ofstream outFile(filename);
+    outFile << "# vertices edges time_seconds\n";
+
+    for (size_t n = 300; n < maxVertexCount; n += vertexStep) {
+        size_t m = edge_count_func(n);
+        Edges edges(n, m);
+
+        double time = 0;
+        for (size_t i = 0; i < NUM_MEASURE_ITER; ++i) {
+            edges.fill();
+            Graph graph(edges);
+            time += Prim_vector(graph).second;
+        }
+        time = time / NUM_MEASURE_ITER;
+        std::cout << "Prim_vector: " << n << " " << m << " " << time << "\n";
+        outFile << n << " " << m << " " << time << "\n";
+    }
+
+    outFile.close();
 }

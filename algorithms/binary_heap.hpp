@@ -2,33 +2,33 @@
 
 #include <vector>
 #include <stdexcept>
-#include <cstdint>
+#include <cstddef>
 
-template <typename T, typename U = int64_t>
+template <typename T>
 class BinaryHeap {
 private:
     std::vector<T> heap;
 
-    U parent(U i) const { return (i - 1) / 2; }
-    U left_child(U i) const { return 2 * i + 1; }
-    U right_child(U i) const { return 2 * i + 2; }
+    size_t parent(size_t i) const { return (i - 1) / 2; }
+    size_t left_child(size_t i) const { return 2 * i + 1; }
+    size_t right_child(size_t i) const { return 2 * i + 2; }
 
-    void sift_up(U i) {
+    void sift_up(size_t i) {
         while (i > 0 && heap[parent(i)] > heap[i]) {
             std::swap(heap[parent(i)], heap[i]);
             i = parent(i);
         }
     }
 
-    void sift_down(U i) {
-        U min_index = i;
-        U left = left_child(i);
-        U right = right_child(i);
+    void sift_down(size_t i) {
+        size_t min_index = i;
+        size_t left = left_child(i);
+        size_t right = right_child(i);
 
-        if (left < static_cast<U>(heap.size()) && heap[left] < heap[min_index]) {
+        if (left < heap.size() && heap[left] < heap[min_index]) {
             min_index = left;
         }
-        if (right < static_cast<U>(heap.size()) && heap[right] < heap[min_index]) {
+        if (right < heap.size() && heap[right] < heap[min_index]) {
             min_index = right;
         }
         if (i != min_index) {
@@ -51,7 +51,7 @@ public:
 
     void push(const T& value) {
         heap.push_back(value);
-        sift_up(static_cast<U>(heap.size()) - 1);
+        sift_up(heap.size() - 1);
     }
 
     void pop() {
