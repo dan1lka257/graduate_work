@@ -7,16 +7,7 @@
 #include <string>
 #include <iostream>
 
-const size_t NUM_MEASURE_ITER = 5;
-
-template <typename Func, typename... Args>
-double measure_time(Func&& func, Args&&... args) {
-    auto start = std::chrono::high_resolution_clock::now();
-    std::forward<Func>(func)(std::forward<Args>(args)...);
-    auto end = std::chrono::high_resolution_clock::now();
-    std::chrono::duration<double> duration = end - start;
-    return duration.count();
-}
+const size_t NUM_MEASURE_ITER = 10;
 
 void run_kruskal_test(size_t maxVertexCount,
     size_t vertexStep,

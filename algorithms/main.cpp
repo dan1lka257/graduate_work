@@ -52,26 +52,26 @@ int main() {
         thread.join();
     }*/
 
-    run_kruskal_test(maxVertexCountCase1, vertexStep,
+    /*run_kruskal_test(maxVertexCountCase1, vertexStep,
         "../../data/kruskal_file_1.txt", edge_count_case1);
     run_kruskal_test(maxVertexCountCase2, vertexStep,
         "../../data/kruskal_file_2.txt", edge_count_case2);
     run_kruskal_test(maxVertexCountCase3, vertexStep,
-        "../../data/kruskal_file_3.txt", edge_count_case3);
+        "../../data/kruskal_file_3.txt", edge_count_case3);*/
 
-    run_prim_binary_test(maxVertexCountCase1, vertexStep,
+    /*run_prim_binary_test(maxVertexCountCase1, vertexStep,
         "../../data/prim_bin_file_1.txt", edge_count_case1);
     run_prim_binary_test(maxVertexCountCase2, vertexStep,
         "../../data/prim_bin_file_2.txt", edge_count_case2);
     run_prim_binary_test(maxVertexCountCase3, vertexStep,
         "../../data/prim_bin_file_3.txt", edge_count_case3);
 
-    run_prim_fibonacci_test(maxVertexCountCase1, vertexStep,
+    run_prim_fibonacci_test(maxvertexcountcase1, vertexstep,
         "../../data/prim_fib_file_1.txt", edge_count_case1);
-    run_prim_fibonacci_test(maxVertexCountCase2, vertexStep,
+    run_prim_fibonacci_test(maxvertexcountcase2, vertexstep,
         "../../data/prim_fib_file_2.txt", edge_count_case2);
-    run_prim_fibonacci_test(maxVertexCountCase3, vertexStep,
-        "../../data/prim_fib_file_3.txt", edge_count_case3);
+    run_prim_fibonacci_test(maxvertexcountcase3, vertexstep,
+        "../../data/prim_fib_file_3.txt", edge_count_case3);*/
 
     run_prim_vector_test(maxVertexCountCase1, vertexStep,
         "../../data/prim_vec_file_1.txt", edge_count_case1);
